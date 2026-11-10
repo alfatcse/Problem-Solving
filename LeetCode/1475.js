@@ -1,17 +1,3 @@
-let a = [2, 1, 5, 6, 2, 3];
-let result = Array(a.length).fill(-1);
-let stack = [];
-for (let i = 0; i < a.length; i++) {
-  while (stack.length !== 0 && a[stack.length - 1] < a[i]) {
-    stack.pop();
-    result[i - 1] = a[i];
-    console.log(stack);
-  }
-  stack.push(i);
-
-  console.log(stack);
-}
-console.log(result);
 /**
  * @param {number[]} prices
  * @return {number[]}
