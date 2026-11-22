@@ -3,12 +3,6 @@
  * @param {string[]} event2
  * @return {boolean}
  */
-function covertTime(t) {
-    var items = t.split(":");
-    var hours = Number(items[0] * 60);
-    var minutes = Number(items[1]);
-    return (hours + minutes);
-}
 var haveConflict = function (event1, event2) {
     if (((event1[0]) <= (event2[0]) &&
         (event2[0]) <= (event1[1])) ||
