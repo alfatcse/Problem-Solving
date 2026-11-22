@@ -13,4 +13,4 @@ var findErrorNums = function (nums) {
         if (res[i] === 2) duble = i + 1;
     }
     return [duble,missing];
-};*/
+};
